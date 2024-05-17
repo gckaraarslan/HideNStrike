@@ -53,10 +53,13 @@ private void Start()
 
   recoilLength = 0;
   recoverLength = 1 / firePerSeconds * recoverPercent;
+  
  }
 
  private void Update()
  {
+ 
+  
   if (nextFireMoment>0)
   {
    nextFireMoment -= Time.deltaTime;

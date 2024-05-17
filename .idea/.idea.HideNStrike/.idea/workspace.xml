@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b75f067-5fa9-4ecc-8162-768ea6a48a93" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HideNStrike/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HideNStrike/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerSetup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/RoomManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RoomManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Weapon.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +19,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/09b73943024848a39f1d3fcc20f997b727800/19/f28a4d5c/Animation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LeaderBoard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NİckNameTextLooksAt.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -103,7 +113,7 @@
       <workItem from="1715865230666" duration="23032000" />
       <workItem from="1715935963263" duration="2227000" />
       <workItem from="1715943022429" duration="1735000" />
-      <workItem from="1715947943430" duration="631000" />
+      <workItem from="1715947943430" duration="10385000" />
     </task>
     <servers />
   </component>
