@@ -230,6 +230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {fileID: 6240026793030913024}
   camera: {fileID: 4907776887018790521}
+  nickname: 
 --- !u!135 &1393449771239347785
 SphereCollider:
   m_ObjectHideFlags: 0
