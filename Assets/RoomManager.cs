@@ -38,8 +38,8 @@ public class RoomManager : MonoBehaviourPunCallbacks
     }
     void Start()
     {
-        Debug.Log("Connecting...");
-        PhotonNetwork.ConnectUsingSettings();
+        // Debug.Log("Connecting...");
+        // PhotonNetwork.ConnectUsingSettings();    // join room button eventine taşındı...
     }
 
     public override void OnConnectedToMaster()
