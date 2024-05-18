@@ -63,7 +63,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
         roomCam.SetActive(false);
        
         SpawnPlayer();
-    }
+    } 
 
     public void SpawnPlayer()
     {
@@ -73,6 +73,8 @@ public class RoomManager : MonoBehaviourPunCallbacks
         _player.GetComponent<Health>().isLocalPlayer = true;
         
         _player.GetComponent<PhotonView>().RPC("SetNickname",RpcTarget.AllBuffered,nickName);
-       
+
+        PhotonNetwork.LocalPlayer.NickName = nickName;
+
     }
 }

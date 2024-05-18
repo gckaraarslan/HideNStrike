@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
+using Photon.Pun.UtilityScripts;
 using TMPro;
 using UnityEngine;
 
@@ -91,7 +92,7 @@ private void Start()
   }
  }
 
- void Reload()
+ private void Reload()
  {
   animation.Play(reload.name);
   if (mag>0)
@@ -103,7 +104,7 @@ private void Start()
   ammoText.text = ammo + "/" + magAmmo;
  }
 
- void Fire()
+ private void Fire()
  {
   recoiling = true;
   recovering = false;
@@ -112,14 +113,21 @@ private void Start()
   //Debug.DrawRay(ray.origin,ray.direction);
   if (Physics.Raycast(ray.origin,ray.direction,out hit,100f))
   {
+   
    if (hit.transform.gameObject.GetComponent<Health>())
    {
+    //PhotonNetwork.LocalPlayer.AddScore(1);
+    if (damage>hit.transform.gameObject.GetComponent<Health>().health)
+    {
+     //kill 
+     PhotonNetwork.LocalPlayer.AddScore(1);
+    }
     hit.transform.gameObject.GetComponent<PhotonView>().RPC("TakeDamage",RpcTarget.All,damage);
    }
   }
  }
 
- void Recoil()
+ private void Recoil()
  {
   Vector3 finalPosition =
    new Vector3(originalPosition.x, originalPosition.y + recoilUp, originalPosition.z - recoilBack);
@@ -135,7 +143,7 @@ private void Start()
  }
  
  
- void Recover()
+ private void Recover()
  {
   Vector3 finalPosition = originalPosition;
    

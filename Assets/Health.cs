@@ -7,6 +7,8 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    
+    //TODO:health<=0 olduğunda bir event fırlatıcaz score dinliyecek, ui dinleyecek, gerekli olan herkes dinleyecek...
     public int health;
    public bool isLocalPlayer;
 
@@ -24,7 +26,7 @@ public class Health : MonoBehaviour
             
             
             
-            Destroy(gameObject);
+            Destroy(gameObject);    //TODO:destroy değil de setactive false yapıcaz... object pool...
 
            
         }

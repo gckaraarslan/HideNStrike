@@ -1552,7 +1552,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &435363954
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2186,11 +2186,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81d74f7ecfced4e478f300f2578e16b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHolder: {fileID: 0}
+  playersHolder: {fileID: 435363953}
   refreshRate: 1
-  slots: []
-  scoreTexts: []
-  nameTexts: []
+  playerSlots:
+  - {fileID: 1461696697}
+  - {fileID: 1508042779}
+  - {fileID: 1745098281}
+  - {fileID: 1059780750}
+  - {fileID: 1255085938}
+  scoreTexts:
+  - {fileID: 295635026}
+  - {fileID: 159025}
+  - {fileID: 225189024}
+  - {fileID: 270385896}
+  - {fileID: 909440385}
+  nameTexts:
+  - {fileID: 48718939}
+  - {fileID: 1835469151}
+  - {fileID: 1939404073}
+  - {fileID: 26432153}
+  - {fileID: 1659608456}
 --- !u!114 &1047305371
 MonoBehaviour:
   m_ObjectHideFlags: 0
