@@ -8,11 +8,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HideNStrike/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HideNStrike/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Health.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/LeaderBoard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeaderBoard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NİckNameTextLooksAt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NİckNameTextLooksAt.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/RoomManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RoomManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +117,10 @@
       <workItem from="1715943022429" duration="1735000" />
       <workItem from="1715947943430" duration="10385000" />
       <workItem from="1716038726773" duration="5942000" />
+      <workItem from="1716093903966" duration="2594000" />
+      <workItem from="1716112769006" duration="1728000" />
+      <workItem from="1716136043279" duration="4800000" />
+      <workItem from="1716205839526" duration="7090000" />
     </task>
     <servers />
   </component>

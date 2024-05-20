@@ -113,14 +113,18 @@ private void Start()
   //Debug.DrawRay(ray.origin,ray.direction);
   if (Physics.Raycast(ray.origin,ray.direction,out hit,100f))
   {
-   
-   if (hit.transform.gameObject.GetComponent<Health>())
+   //PhotonNetwork.LocalPlayer.AddScore(1);
+   if (hit.transform.gameObject.GetComponent<Health>()) //HEALTH SCRIPTINI TAŞIYANLARA VURDUĞUNDA...
    {
-    //PhotonNetwork.LocalPlayer.AddScore(1);
-    if (damage>hit.transform.gameObject.GetComponent<Health>().health)
+    PhotonNetwork.LocalPlayer.AddScore(25);
+    if (damage>=hit.transform.gameObject.GetComponent<Health>().health) //VEYA DAMAGE >HEALTH //TODO:AMA BİR SORUN VAR BURDA...
     {
-     //kill 
-     PhotonNetwork.LocalPlayer.AddScore(1);
+     Debug.Log("HASAR VERİLDİ Mİ ???"); //BU DA ÇALIŞMADI ÇÜNKÜ IF KOŞULU ÇALIŞMIYOR...
+     RoomManager.instance.kills++;
+     RoomManager.instance.SetHashes();
+     
+     PhotonNetwork.LocalPlayer.AddScore(100);
+     
     }
     hit.transform.gameObject.GetComponent<PhotonView>().RPC("TakeDamage",RpcTarget.All,damage);
    }

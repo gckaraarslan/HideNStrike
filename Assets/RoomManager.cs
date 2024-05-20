@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Mime;
 using Photon.Pun;
 using UnityEngine;
+using Hashtable= ExitGames.Client.Photon.Hashtable;
 
 public class RoomManager : MonoBehaviourPunCallbacks
 {
@@ -19,6 +21,13 @@ public class RoomManager : MonoBehaviourPunCallbacks
     public GameObject connectingUI;
     private string nickName = "Unnamed";
 
+    [HideInInspector]
+    public int kills;
+    [HideInInspector]
+    public int deaths;
+
+    public string roomNameToJoin = "test";
+
     
     private void Awake()
     {
@@ -32,29 +41,12 @@ public class RoomManager : MonoBehaviourPunCallbacks
     public void JoinRoomButtonPressed()
     {
         Debug.Log("Connecting...");
-        PhotonNetwork.ConnectUsingSettings();
+        PhotonNetwork.JoinOrCreateRoom(roomNameToJoin, null, null);
+
         nameUI.SetActive(false);
         connectingUI.SetActive(true);
     }
-    void Start()
-    {
-        // Debug.Log("Connecting...");
-        // PhotonNetwork.ConnectUsingSettings();    // join room button eventine taşındı...
-    }
 
-    public override void OnConnectedToMaster()
-    {
-        base.OnConnectedToMaster();
-        Debug.Log("Connected to Server");
-        PhotonNetwork.JoinLobby();
-    }
-
-    public override void OnJoinedLobby()
-    {
-        base.OnJoinedLobby();
-        PhotonNetwork.JoinOrCreateRoom("test", null, null);
-        Debug.Log("we are in the lobby");
-    }
 
     public override void OnJoinedRoom()
     {
@@ -76,5 +68,20 @@ public class RoomManager : MonoBehaviourPunCallbacks
 
         PhotonNetwork.LocalPlayer.NickName = nickName;
 
+    }
+
+    public void SetHashes()
+    {
+        try
+        {
+            Hashtable hash = PhotonNetwork.LocalPlayer.CustomProperties;
+
+            hash["kills"] = kills;
+            hash["deaths"] = deaths;
+        }
+        catch (Exception e)
+        {
+        Debug.Log(e);
+        }
     }
 }

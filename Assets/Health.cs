@@ -21,14 +21,24 @@ public class Health : MonoBehaviour
         healthText.text = health.ToString();
         if (health <= 0)
         {
+            
+          
+            if (isLocalPlayer) 
+            {
+                RoomManager.instance.SpawnPlayer();
+                RoomManager.instance.deaths++;
+                RoomManager.instance.SetHashes();
+            }
+            
            
-            if (isLocalPlayer) RoomManager.instance.SpawnPlayer();
-            
-            
             
             Destroy(gameObject);    //TODO:destroy değil de setactive false yapıcaz... object pool...
 
            
         }
     }
+
+   
+
+    
 }
